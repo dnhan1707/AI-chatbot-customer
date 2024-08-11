@@ -12,7 +12,8 @@ export async function POST(req) {
     const completion = await openai.chat.completions.create({
         messages : [
         {
-            role: "system", content: systemPrompt
+            role: "system", 
+            content: systemPrompt
         },
         ...data,
     ],
